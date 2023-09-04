@@ -1,0 +1,77 @@
+.App {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.App__PasswordInput {
+    width: 400px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 4px 8px 4px 8px;
+    margin-top: 12px;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.App__Rule_Valid {
+    background-color: rgb(114, 255, 149);
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(80, 182, 119);
+    box-shadow: 0px 8px 16px rgba(53, 255, 130, 0.8);
+}
+
+.App__Rule_Invalid {
+    background-color: rgb(255, 92, 92);
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgb(187, 86, 86);
+    box-shadow: 0px 8px 16px rgba(255, 93, 93, 0.8);
+}
+
+.App__Rules {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.App__Rule {
+    width: 400px;
+    height: fit-content;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.App__Rule_Number {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    text-align: left;
+    padding: 4px 8px 4px 8px;
+}
+
+.App__Rule_Message {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: 400;
+    text-align: left;
+    padding: 4px 8px 4px 8px;
+}
+
+.App__ShowAnimation {
+    animation: show 500ms cubic-bezier(0,.59,.43,.95);
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
