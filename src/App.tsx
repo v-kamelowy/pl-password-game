@@ -17,7 +17,6 @@ export default function App() {
     let validRules_temp = Array<{number: number, name: string; message: string; isTrue(password: string): boolean}>()
     let invalidRules_temp = Array<{number: number, name: string; message: string; isTrue(password: string): boolean}>()
     currentRulesArray_temp.forEach(rule => {
-      // if rule.isTrue(password) is true, then it should be at the end of the array. If false, then at the beginning
       if (rule.isTrue(password)) {
         validRules_temp.push(rule)
       }
@@ -103,12 +102,12 @@ export default function App() {
 }
 
 /*
-      <div className='debug'>
-        <p>currentRule: {currentRule}</p>
-        <p>validRules: {validRules.map(rule => rule.name)}</p>
-        <p>invalidRules: {invalidRules.map(rule => rule.name)}</p>
-        <p>currentRulesArray: {currentRulesArray.map(rule => rule.name)}</p>
-        <p>isPasswordValid: {isPasswordValid.toString()}</p>
-        <p>password: {password}</p>
-      </div>
+  <div className='debug'>
+    <p>currentRule: {currentRule}</p>
+    <p>validRules: {validRules.map(rule => rule.name)}</p>
+    <p>invalidRules: {invalidRules.map(rule => rule.name)}</p>
+    <p>currentRulesArray: {currentRulesArray.map(rule => rule.name)}</p>
+    <p>isPasswordValid: {isPasswordValid.toString()}</p>
+    <p>password: {password}</p>
+  </div>
 */
