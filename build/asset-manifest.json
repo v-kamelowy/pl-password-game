@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/pl-password-game/static/css/main.f9e3ac88.css",
-    "main.js": "/pl-password-game/static/js/main.bcf77d90.js",
-    "index.html": "/pl-password-game/index.html",
-    "main.f9e3ac88.css.map": "/pl-password-game/static/css/main.f9e3ac88.css.map",
-    "main.bcf77d90.js.map": "/pl-password-game/static/js/main.bcf77d90.js.map"
+    "main.css": "/pl-password-game/build/static/css/main.f9e3ac88.css",
+    "main.js": "/pl-password-game/build/static/js/main.bcf77d90.js",
+    "index.html": "/pl-password-game/build/index.html",
+    "main.f9e3ac88.css.map": "/pl-password-game/build/static/css/main.f9e3ac88.css.map",
+    "main.bcf77d90.js.map": "/pl-password-game/build/static/js/main.bcf77d90.js.map"
   },
   "entrypoints": [
     "static/css/main.f9e3ac88.css",
